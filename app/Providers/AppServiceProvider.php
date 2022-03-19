@@ -4,9 +4,6 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-//Schemaクラスをuseする
-use Illuminate\Support\Facades\Schema;
-
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -24,6 +21,8 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
+    use Illuminate\Support\Facades\Schema;
+
     public function boot()
     {
         //
